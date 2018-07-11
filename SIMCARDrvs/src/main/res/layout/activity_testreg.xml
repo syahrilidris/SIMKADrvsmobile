@@ -1,0 +1,282 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#87ceeb">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="Registration"
+                android:textColor="#2582C5"
+                android:layout_marginTop="20dp"
+                android:textSize="30dp"
+                android:textStyle="bold"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+        <ImageView
+            android:layout_marginTop="30dp"
+            android:layout_width="240dp"
+            android:layout_height="240dp"
+            android:id="@+id/imagesource"
+            android:onClick="takepicture"
+            android:layout_gravity="center"
+            android:layout_marginBottom="30dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Personal Info"
+            android:id="@+id/textView22"
+            android:textSize="20dp" />
+
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="Name"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="30dp"
+            android:id="@+id/Name"
+            android:inputType="textCapCharacters"
+            android:text="Ali" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner2"
+            android:entries="@array/Document_arrays"
+            android:layout_gravity="center_horizontal"
+            android:background="#ffffff"
+            android:layout_marginTop="15dp" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="Document No."
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/ID"
+            android:maxLength="12"
+            android:inputType="textCapCharacters"
+            android:text="000" />
+
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="DOB (yyyyMMdd)"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/DOB"
+            android:inputType="date"
+            android:maxLength="8"
+            android:text="19911211" />
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="Nationality (Eg. MALAYSIA=MYS)"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Nationality"
+            android:inputType="textCapCharacters"
+            android:maxLength="3"
+            android:text="MYS" />
+        <EditText android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="Gender (MALE - M)"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Gender"
+            android:inputType="textCapCharacters"
+            android:maxLength="1"
+            android:text="M" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Address"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Address1"
+            android:inputType="textCapCharacters"
+            android:text="kl" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Address"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Address2"
+            android:inputType="textCapCharacters"
+            android:text="kl" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Address"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Address3"
+            android:inputType="textCapCharacters"
+            android:text="kl" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="PostCode"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/Postcode"
+            android:inputType="number"
+            android:maxLength="6"
+            android:text="12323" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="City"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/City"
+            android:inputType="textCapCharacters"
+            android:text="kl" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="State"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/State"
+            android:inputType="textCapCharacters"
+            android:layout_marginBottom="80dp"
+            android:text="kl" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Simcard Info"
+            android:id="@+id/textView23"
+            android:textSize="20dp" />
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/operator_arrays"
+            android:id="@+id/spinner"
+            android:background="#ffffff"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Phone No"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/PhoneNo"
+            android:inputType="phone"
+            android:maxLength="12"
+            android:text="000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="Sim Serial No"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/SerialNo"
+            android:inputType="number"
+            android:maxLength="14"
+            android:text="000" />
+
+        <Button
+            style="?android:attr/buttonStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Read Barcode"
+            android:onClick="ReadBarcode"
+            android:id="@+id/button3" />
+
+        <EditText
+            android:layout_width="fill_parent"
+            android:layout_height="40dp"
+            android:hint="PUK1"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/PUK1"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="8"
+            android:text="0000" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:hint="PUK2"
+            android:background="#f3f3f3"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:id="@+id/PUK2"
+            android:layout_gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="8"
+            android:text="0000" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="ID :"
+            android:id="@+id/txtResult"
+            android:textSize="40dp"
+            android:textAlignment="center"
+            android:visibility="invisible"
+            android:textColor="@android:color/black" />
+
+        <Button android:layout_width="250dp"
+            android:onClick="OnRegister"
+            android:layout_height="60dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="20dp"
+            android:text="REGISTER"
+            android:textColor="#000000"
+            android:id="@+id/btnSend"
+            android:textSize="30dp"
+            android:background="#ffffff" />
+
+        <Button
+            android:onClick="OnFinger"
+            android:layout_width="250dp"
+            android:layout_height="60dp"
+            android:text="Save Database"
+            android:id="@+id/button2"
+            android:layout_gravity="center_horizontal"
+            android:visibility="invisible" />
+
+
+    </LinearLayout>
+</ScrollView>
